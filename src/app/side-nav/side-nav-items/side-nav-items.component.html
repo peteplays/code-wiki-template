@@ -1,0 +1,15 @@
+<div role="navigation" snScrollSpy id="nav-item">
+  <ul *ngFor="let section of items">
+    <li *ngFor="let item of section">
+      <a
+        pageScroll
+        [pageScrollDuration]="pageScrollDuration"
+        [pageScrollEasing]="pageScrollEasing"
+        snScrollSpyItem
+        for="nav-item"
+        href="{{item.id}}"
+        [innerHTML]="item.name"
+      ></a>
+    </li>
+  </ul>
+</div>

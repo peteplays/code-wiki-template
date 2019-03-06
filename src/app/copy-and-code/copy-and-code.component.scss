@@ -1,0 +1,25 @@
+@import '../../styles.scss';
+
+pre,
+code {
+  margin-top: 0;
+}
+
+pre {
+  position: relative;
+
+  .copy {
+    @extend .btn;
+    color: $grey-darkest;
+    background-color: darken($yellow-light, 15%);
+    border: 1px solid darken($yellow-light, 20%);
+    border-radius: 0 4px 0 4px !important;
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    &:hover {
+      background-color: darken($yellow-light, 5%);
+    }
+  }
+}

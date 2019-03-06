@@ -1,0 +1,6 @@
+<h4 *ngIf="name" [innerHTML]="name"></h4>
+<pre>
+  <button ngxClipboard [cbContent]="code" class="copy">Copy to clipboard</button>
+  <code [highlight]="code"></code>
+</pre>
+

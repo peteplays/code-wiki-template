@@ -1,0 +1,18 @@
+@import '../../../variables';
+
+ul {
+  list-style: none;
+
+  li {
+    cursor: pointer;
+
+    &:first-child {
+      font-weight: bold;
+    }
+
+    a {
+      color: $grey-darkest;
+      text-decoration: none;
+    }
+  }
+}
